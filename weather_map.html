@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_63dcded5ea26d7ad86ed837d51208694 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_63dcded5ea26d7ad86ed837d51208694" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_63dcded5ea26d7ad86ed837d51208694 = L.map(
+                "map_63dcded5ea26d7ad86ed837d51208694",
+                {
+                    center: [20.5937, 78.9629],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_83efd6999b1eedb23288f7a3262a82d9 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_83efd6999b1eedb23288f7a3262a82d9.addTo(map_63dcded5ea26d7ad86ed837d51208694);
+        
+    
+            var marker_7c9c95069a7f4b34df7cc75f6d34094e = L.marker(
+                [18.5196, 73.8553],
+                {
+}
+            ).addTo(map_63dcded5ea26d7ad86ed837d51208694);
+        
+    
+        var popup_d81a5772aea1220c22a5b01e7d22cb00 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ff6dec94aaa18d2470812b867b020abc = $(`<div id="html_ff6dec94aaa18d2470812b867b020abc" style="width: 100.0%; height: 100.0%;">Location: Pune<br>Temperature (C): 20.91<br>Wind Speed (m/s): 2.35</div>`)[0];
+                popup_d81a5772aea1220c22a5b01e7d22cb00.setContent(html_ff6dec94aaa18d2470812b867b020abc);
+            
+        
+
+        marker_7c9c95069a7f4b34df7cc75f6d34094e.bindPopup(popup_d81a5772aea1220c22a5b01e7d22cb00)
+        ;
+
+        
+    
+    
+            marker_7c9c95069a7f4b34df7cc75f6d34094e.bindTooltip(
+                `<div>
+                     Pune
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_597edfe860895d0e131548661d1e925a = L.marker(
+                [19.0144, 72.8479],
+                {
+}
+            ).addTo(map_63dcded5ea26d7ad86ed837d51208694);
+        
+    
+        var popup_ac9bd8007c0b9ccd529dcc92f7a94ded = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6ad2439c91779f67c85baaa2c63a2ca5 = $(`<div id="html_6ad2439c91779f67c85baaa2c63a2ca5" style="width: 100.0%; height: 100.0%;">Location: Mumbai<br>Temperature (C): 26.54<br>Wind Speed (m/s): 2.03</div>`)[0];
+                popup_ac9bd8007c0b9ccd529dcc92f7a94ded.setContent(html_6ad2439c91779f67c85baaa2c63a2ca5);
+            
+        
+
+        marker_597edfe860895d0e131548661d1e925a.bindPopup(popup_ac9bd8007c0b9ccd529dcc92f7a94ded)
+        ;
+
+        
+    
+    
+            marker_597edfe860895d0e131548661d1e925a.bindTooltip(
+                `<div>
+                     Mumbai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a456cbe2d01ad70ac582abf8da77692b = L.marker(
+                [28.6667, 77.2167],
+                {
+}
+            ).addTo(map_63dcded5ea26d7ad86ed837d51208694);
+        
+    
+        var popup_c4c54c999f99144e1d933747dbde53bf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ca3682613ecd09e11ec14850938e9af = $(`<div id="html_5ca3682613ecd09e11ec14850938e9af" style="width: 100.0%; height: 100.0%;">Location: Delhi<br>Temperature (C): 21.66<br>Wind Speed (m/s): 4.38</div>`)[0];
+                popup_c4c54c999f99144e1d933747dbde53bf.setContent(html_5ca3682613ecd09e11ec14850938e9af);
+            
+        
+
+        marker_a456cbe2d01ad70ac582abf8da77692b.bindPopup(popup_c4c54c999f99144e1d933747dbde53bf)
+        ;
+
+        
+    
+    
+            marker_a456cbe2d01ad70ac582abf8da77692b.bindTooltip(
+                `<div>
+                     Delhi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_696c3f4b90fb9adfb60c152545f61339 = L.marker(
+                [13.0878, 80.2785],
+                {
+}
+            ).addTo(map_63dcded5ea26d7ad86ed837d51208694);
+        
+    
+        var popup_a33f2fa9db95e2e33fea8345ca50a3b4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a7f97f0f4eb1322afb4e64e28edc0aa4 = $(`<div id="html_a7f97f0f4eb1322afb4e64e28edc0aa4" style="width: 100.0%; height: 100.0%;">Location: Chennai<br>Temperature (C): 28.78<br>Wind Speed (m/s): 1.87</div>`)[0];
+                popup_a33f2fa9db95e2e33fea8345ca50a3b4.setContent(html_a7f97f0f4eb1322afb4e64e28edc0aa4);
+            
+        
+
+        marker_696c3f4b90fb9adfb60c152545f61339.bindPopup(popup_a33f2fa9db95e2e33fea8345ca50a3b4)
+        ;
+
+        
+    
+    
+            marker_696c3f4b90fb9adfb60c152545f61339.bindTooltip(
+                `<div>
+                     Chennai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0294356f10a6666e616d836c949ff44d = L.marker(
+                [22.5697, 88.3697],
+                {
+}
+            ).addTo(map_63dcded5ea26d7ad86ed837d51208694);
+        
+    
+        var popup_19e81d1827b8d2059530b1821b26a058 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_26ac3fa27f77952deb0e0d922be7008c = $(`<div id="html_26ac3fa27f77952deb0e0d922be7008c" style="width: 100.0%; height: 100.0%;">Location: Kolkata<br>Temperature (C): 25.98<br>Wind Speed (m/s): 1.79</div>`)[0];
+                popup_19e81d1827b8d2059530b1821b26a058.setContent(html_26ac3fa27f77952deb0e0d922be7008c);
+            
+        
+
+        marker_0294356f10a6666e616d836c949ff44d.bindPopup(popup_19e81d1827b8d2059530b1821b26a058)
+        ;
+
+        
+    
+    
+            marker_0294356f10a6666e616d836c949ff44d.bindTooltip(
+                `<div>
+                     Kolkata
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
